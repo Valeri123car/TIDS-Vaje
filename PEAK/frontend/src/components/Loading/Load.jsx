@@ -1,7 +1,7 @@
 import React from 'react';
 import './loading.css';
 
-const Loading = () => {
+const Load = () => {
   return (
     <div className="loading-container">
       <div className="loading-spinner">
@@ -16,4 +16,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default Load;

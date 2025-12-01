@@ -9,6 +9,7 @@ const api = axios.create({
   },
 });
 
+// Trails API
 export const trailsAPI = {
   getAll: () => api.get("/trails"),
   getById: (id) => api.get(`/trails/${id}`),
@@ -18,22 +19,42 @@ export const trailsAPI = {
   getDifficulties: () => api.get("/trails/meta/difficulties"),
 };
 
+// Weather API
 export const weatherAPI = {
   getCurrent: (lat, lon) => api.get(`/weather?lat=${lat}&lon=${lon}`),
   getForecast: (lat, lon) => api.get(`/weather/forecast?lat=${lat}&lon=${lon}`),
 };
 
-export const sursAPI = {
-  getTourism: () => api.get("/surs/tourism"),
+// Auth API
+export const authAPI = {
+  login: (email, password) => api.post("/auth/login", { email, password }),
+  register: (name, email, password) =>
+    api.post("/auth/register", { name, email, password }),
+  getProfile: (userId) => api.get(`/auth/me/${userId}`),
+  updateProfile: (userId, updates) =>
+    api.put(`/auth/profile/${userId}`, updates),
+
+  // Hikes
+  getHikes: (userId) => api.get(`/auth/hikes/${userId}`),
+  addHike: (userId, trailId, hikeData) =>
+    api.post("/auth/hikes", { userId, trailId, ...hikeData }),
+  deleteHike: (hikeId, userId) =>
+    api.delete(`/auth/hikes/${hikeId}`, { data: { userId } }),
+  getStats: (userId) => api.get(`/auth/stats/${userId}`),
+
+  // Favorites
+  getFavorites: (userId) => api.get(`/auth/favorites/${userId}`),
+  addFavorite: (userId, trailId) =>
+    api.post("/auth/favorites", { userId, trailId }),
+  removeFavorite: (userId, trailId) =>
+    api.delete("/auth/favorites", { data: { userId, trailId } }),
+  isFavorite: (userId, trailId) =>
+    api.get(`/auth/favorites/${userId}/${trailId}`),
 };
 
-export const userAPI = {
-  getProfile: (userId) => api.get(`/user/profile/${userId}`),
-  updateProfile: (userData) => api.post("/user/profile", userData),
-  getHikes: (userId) => api.get(`/user/hikes/${userId}`),
-  addHike: (hikeData) => api.post("/user/hikes", hikeData),
-  deleteHike: (hikeId) => api.delete(`/user/hikes/${hikeId}`),
-  getStats: (userId) => api.get(`/user/stats/${userId}`),
+// SURS API
+export const sursAPI = {
+  getTourism: () => api.get("/surs/tourism"),
 };
 
 export default api;

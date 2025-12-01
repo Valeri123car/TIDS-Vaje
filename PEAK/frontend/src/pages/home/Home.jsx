@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../../components/hero/Hero';
-import Stats from '../../components/stats/Stats';
-import TrailList from '../../components/TrailList/TrailList';
-import Loading from '../../components/Loading/Loading';
+import Stats from '../../../src/components/stats/Stats';
+import TrailList from '../../../src/components/trailsList/TrailList';
+import Loading from '../../../src/components/Loading/Load';
 import { trailsAPI } from '../../api/api';
 import './Home.css';
 

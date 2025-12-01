@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "email": "test@peak.si",
+      "password": "test123",
+      "name": "Test Uporabnik",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "completedHikes": [
+    {
+      "id": "hike1",
+      "userId": "user1",
+      "trailId": 31900,
+      "date": "2024-11-15",
+      "duration": 280,
+      "notes": "Lep dan za pohod!",
+      "rating": 5
+    }
+  ],
+  "favoriteTrails": [
+    {
+      "userId": "user1",
+      "trailId": 31900
+    },
+    {
+      "userId": "user1",
+      "trailId": 31905
+    }
+  ]
+}

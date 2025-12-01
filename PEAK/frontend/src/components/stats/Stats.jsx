@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, TrendingUp, Clock, Mountain } from 'lucide-react';
-import './tats.css';
+import './stats.css';
 
 const Stats = ({ stats, loading }) => {
   if (loading) {

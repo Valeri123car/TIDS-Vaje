@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TrailCard from '../TrailCard/TrailCard';
+import TrailCard from '../trailCard/TrailCard';
 import SearchFilter from '../searchFilter/SearchFilter';
 import './trailList.css';
 
