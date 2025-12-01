@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Lego";
+  src: url("./fonts/legothick.ttf");
+}
+body {
+  font-family: "Lego", Arial, sans-serif;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7d708;
+  background-image: radial-gradient(#e6e6e6 1.5px, transparent 1.5px),
+    radial-gradient(#e6e6e6 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  color: #222;
+}
+
+.glavni {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.loadBtn {
+  background-color: #e50914;
+}
+
+.filterBtn {
+  background-color: #0066ff;
+}
+
+.exportJson {
+  background-color: #00a859;
+}
+
+.exportXml {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+.filter,
+.filterInput {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  font-size: 14px;
+  outline: none;
+  width: 80%;
+  max-width: 400px;
+}
+
+.output {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  color: #333;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+}

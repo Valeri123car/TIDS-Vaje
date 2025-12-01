@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SURS Podatki - Dinamično</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SURS Analiza - Dinamično nalaganje</h1>
+      <p style="text-align: center; color: #666; margin-bottom: 30px">
+        Podatki se samodejno naložijo ob zagonu strani
+      </p>
+
+      <div id="loading" class="loading">Nalagam podatke iz SURS...</div>
+
+      <div id="content" style="display: none">
+        <div class="controls">
+          <button onclick="prikaziGrafe()">Osveži grafe</button>
+        </div>
+
+        <div class="filter-box">
+          <h3>Filtriranje podatkov</h3>
+          <div id="filters"></div>
+          <button onclick="uporabiFiltre()">Uporabi filtre</button>
+          <button onclick="ponastavi()">Ponastavi</button>
+        </div>
+
+        <div id="stats"></div>
+
+        <div class="chart-box">
+          <h2>Črtni grafikon</h2>
+          <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h2>Stolpčni diagram</h2>
+          <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h2>Tortni diagram</h2>
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

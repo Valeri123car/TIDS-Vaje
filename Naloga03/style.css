@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.spinner {
+  border: 4px solid #eee;
+  border-top: 4px solid #555;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+}
+
+button:hover {
+  background: #333;
+}
+
+.filter-box {
+  background: #fafafa;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+}
+
+#filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-item label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.filter-item select,
+.filter-item input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #555;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.chart-box {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+}
+
+canvas {
+  max-height: 400px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background: #555;
+  color: white;
+  padding: 12px 10px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}

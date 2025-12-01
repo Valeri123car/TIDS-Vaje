@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+package hiking;
+
+message Trail {
+    string id = 1;
+    string name = 2;
+    string difficulty = 3;
+    int32 length = 4;
+    string region = 5;
+    int32 ascent = 6;
+}
+
+message Hike {
+    string id = 1;
+    string userId = 2;
+    string trailId = 3;
+    string date = 4;
+    int32 duration = 5;
+    string notes = 6;
+}
+
+message GetTrailRequest {
+    string id = 1;
+}
+
+message GetAllTrailsRequest {
+    string region = 1;
+}
+
+message AddHikeRequest {
+    string userId = 1;
+    string trailId = 2;
+    int32 duration = 3;
+    string notes = 4;
+}
+
+message GetUserHikesRequest {
+    string userId = 1;
+}
+
+message StreamTrailsRequest {
+    string difficulty = 1;
+}
+
+message TrailResponse {
+    Trail trail = 1;
+    string message = 2;
+}
+
+message TrailsResponse {
+    repeated Trail trails = 1;
+    int32 count = 2;
+}
+
+message HikeResponse {
+    Hike hike = 1;
+    string message = 2;
+}
+
+message UserHikesResponse {
+    repeated Hike hikes = 1;
+    int32 total = 2;
+}
+
+service HikingService {
+    rpc GetTrail (GetTrailRequest) returns (TrailResponse) {}
+    rpc AddHike (AddHikeRequest) returns (HikeResponse) {}
+    rpc GetAllTrails (GetAllTrailsRequest) returns (TrailsResponse) {}
+    rpc GetUserHikes (GetUserHikesRequest) returns (UserHikesResponse) {}
+    rpc StreamTrails (StreamTrailsRequest) returns (stream Trail) {}
+}

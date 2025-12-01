@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LEGO XML Aplikacija</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="glavni">
+      <button class="loadBtn">Naloži podatke</button>
+
+      <select class="filter">
+        <option value="zaloga">Artikli z manj kot 5 kosi</option>
+        <option value="dobavitelj">Izdelki določenega dobavitelja</option>
+        <option value="datum">Naročila po določenem datumu</option>
+      </select>
+
+      <input
+        type="text"
+        class="filterInput"
+        placeholder="Vnesi vrednost filtra..."
+      />
+
+      <button class="filterBtn">Filtriraj</button>
+      <button class="exportJson">Izvozi v JSON</button>
+      <button class="exportXml">Izvozi v XML</button>
+    </div>
+
+    <div class="output"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

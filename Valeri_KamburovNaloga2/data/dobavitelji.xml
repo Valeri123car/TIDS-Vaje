@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dobavitelji>
+    <dobavitelj id_dobavitelja="1">
+        <artikelRef id_artikla="1" />
+        <ime>A.M. RAMP and CO GMBH</ime>
+        <lokacija>Lorsbacher Strasse 28, 65817 - Germany</lokacija>
+        <razdalja>10</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="2">
+        <ime>AMB INUDSTRI AB</ime>
+        <lokacija>Kvarnvägen 26, SE-361 Broakulla - Sweden</lokacija>
+        <razdalja>100</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="3">
+        <ime>DS Smith</ime>
+        <lokacija>Husby Allé 8, DK-2630 Taastrup, Denmark</lokacija>
+        <razdalja>1000</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="4">
+        <ime>Avient Colorants</ime>
+        <lokacija>No.88 Lane 4377 Jindu Road, Minhang Disctrict, Shangai City, China</lokacija>
+        <razdalja>10000</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="5">
+        <ime>Avient Colorants</ime>
+        <lokacija>Jätnyxegaten 7 Molmo, Sweden</lokacija>
+        <razdalja>20</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="6">
+        <ime>Avient Colorants</ime>
+        <lokacija>Monread Industrial Estate, Naas, Co Kildare Ireland</lokacija>
+        <razdalja>200</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="7">
+        <ime>Shangai Donneley Printing Co., Ltd.</ime>
+        <lokacija>Av. Industrial Norte - Mexico</lokacija>
+        <razdalja>2000</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="8">
+        <ime>Shangai Donneley Printing Co., Ltd.</ime>
+        <lokacija>Iztapalapa - Mexico</lokacija>
+        <razdalja>20000</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="9">
+        <ime>Shangai Donneley Printing Co., Ltd.</ime>
+        <lokacija></lokacija>
+        <razdalja>30</razdalja>
+    </dobavitelj>
+    <dobavitelj id_dobavitelja="10">
+        <ime>Sandvik Osprey</ime>
+        <lokacija> Miland Road, SA11 1NJ, Neath - UK</lokacija>
+        <razdalja>300</razdalja>
+    </dobavitelj>
+</dobavitelji>

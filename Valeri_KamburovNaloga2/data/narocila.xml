@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<narocila>
+    <narocilo id_narocila="1" datum="2025-10-29">
+        <dobaviteljRef id_dobavitelja="1" />
+        <kolicina>50</kolicina>
+        <skupnaCena>49999€</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="2" datum="2025-11-29">
+        <artikelRef id_artikla="2" />
+        <dobaviteljRef id_dobavitelja="2" />
+        <kolicina>10</kolicina>
+        <skupnaCena>8499€</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="3" datum="2025-12-29">
+        <artikelRef id_artikla="3" />
+        <dobaviteljRef id_dobavitelja="3" />
+        <kolicina>20</kolicina>
+        <skupnaCena>3399€</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="4" datum="2025-1-29">
+        <artikelRef id_artikla="4" />
+        <dobaviteljRef id_dobavitelja="4" />
+        <kolicina>1</kolicina>
+        <skupnaCena>149,99 €</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="5" datum="2025-2-29">
+        <artikelRef id_artikla="5" />
+        <dobaviteljRef id_dobavitelja="5" />
+        <kolicina>1</kolicina>
+        <skupnaCena>99,99 €</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="6" datum="2025-3-29">
+        <artikelRef id_artikla="6" />
+        <dobaviteljRef id_dobavitelja="6" />
+        <kolicina>1</kolicina>
+        <skupnaCena>89,99 €</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="7" datum="2025-4-29">
+        <artikelRef id_artikla="7" />
+        <dobaviteljRef id_dobavitelja="7" />
+        <kolicina>1</kolicina>
+        <skupnaCena>79,99 €</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="8" datum="2025-5-29">
+        <artikelRef id_artikla="8" />
+        <dobaviteljRef id_dobavitelja="8" />
+        <kolicina>1</kolicina>
+        <skupnaCena>99,99 €</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="9" datum="2025-6-29">
+        <artikelRef id_artikla="9" />
+        <dobaviteljRef id_dobavitelja="9" />
+        <kolicina>1</kolicina>
+        <skupnaCena>79,99 €</skupnaCena>
+    </narocilo>
+    <narocilo id_narocila="10" datum="2025-7-29">
+        <artikelRef id_artikla="10" />
+        <dobaviteljRef id_dobavitelja="10" />
+        <kolicina>1</kolicina>
+        <skupnaCena>299,99 €</skupnaCena>
+    </narocilo>
+</narocila>

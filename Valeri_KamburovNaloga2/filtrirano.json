@@ -1,0 +1,62 @@
+[
+  {
+    "narocilo": {
+      "id": "1",
+      "datum": "2025-10-29"
+    },
+    "artikel": {
+      "id": "1",
+      "ime": "Zvezda smrti",
+      "stevilo_kock": "9023",
+      "starost": "18+",
+      "cena": "999,99 €",
+      "zaloga": "1"
+    },
+    "dobavitelj": {
+      "id": "1",
+      "ime": "A.M. RAMP and CO GMBH",
+      "lokacija": "Lorsbacher Strasse 28, 65817 - Germany",
+      "razdalja": "10"
+    }
+  },
+  {
+    "narocilo": {
+      "id": "2",
+      "datum": "2025-11-29"
+    },
+    "artikel": {
+      "id": "2",
+      "ime": "Millenium Falcon",
+      "stevilo_kock": "7541",
+      "starost": "16+",
+      "cena": "849,99 €",
+      "zaloga": "3"
+    },
+    "dobavitelj": {
+      "id": "2",
+      "ime": "AMB INUDSTRI AB",
+      "lokacija": "Kvarnvägen 26, SE-361 Broakulla - Sweden",
+      "razdalja": "100"
+    }
+  },
+  {
+    "narocilo": {
+      "id": "3",
+      "datum": "2025-12-29"
+    },
+    "artikel": {
+      "id": "3",
+      "ime": "Imperialni zvezdni rušilec",
+      "stevilo_kock": "1555",
+      "starost": "10+",
+      "cena": "169,99 €",
+      "zaloga": "4"
+    },
+    "dobavitelj": {
+      "id": "3",
+      "ime": "DS Smith",
+      "lokacija": "Husby Allé 8, DK-2630 Taastrup, Denmark",
+      "razdalja": "1000"
+    }
+  }
+]

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artikli>
+    <artikle id_artikla="1">
+        <ime_artikla>Zvezda smrti</ime_artikla>
+        <stevilo_kock>9023</stevilo_kock>
+        <starost>18+</starost>
+        <cena>999,99 €</cena>
+        <datumZadnjeNabave>2025-05-11</datumZadnjeNabave>
+        <zaloga>1</zaloga>
+    </artikle>
+    <artikle id_artikla="2">
+        <ime_artikla>Millenium Falcon</ime_artikla>
+        <stevilo_kock>7541</stevilo_kock>
+        <starost>16+</starost>
+        <cena>849,99 €</cena>
+        <datumZadnjeNabave>2025-05-12</datumZadnjeNabave>
+        <zaloga>3</zaloga>
+    </artikle>
+    <artikle id_artikla="3">
+        <ime_artikla>Imperialni zvezdni rušilec</ime_artikla>
+        <stevilo_kock>1555</stevilo_kock>
+        <starost>10+</starost>
+        <cena>169,99 €</cena>
+        <datumZadnjeNabave>2025-05-13</datumZadnjeNabave>
+        <zaloga>4</zaloga>
+    </artikle>
+    <artikle id_artikla="4">
+        <ime_artikla>Republiški težki oklepnik</ime_artikla>
+        <stevilo_kock>813</stevilo_kock>
+        <starost>9+</starost>
+        <cena>149,99 €</cena>
+        <datumZadnjeNabave>2025-05-14</datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+    <artikle id_artikla="5">
+        <ime_artikla>R2-D2</ime_artikla>
+        <stevilo_kock>1050</stevilo_kock>
+        <starost>10+</starost>
+        <cena>99,99 €</cena>
+        <datumZadnjeNabave>2025-05-15</datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+    <artikle id_artikla="6">
+        <ime_artikla>Varnostni droid K-2SO</ime_artikla>
+        <stevilo_kock>845</stevilo_kock>
+        <starost>10+</starost>
+        <cena>89,99 €</cena>
+        <datumZadnjeNabave>2025-05-16</datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+    <artikle id_artikla="7">
+        <ime_artikla>Čelada Dartha Vaderja</ime_artikla>
+        <stevilo_kock>834</stevilo_kock>
+        <starost>18+</starost>
+        <cena>79,99 €</cena>
+        <datumZadnjeNabave>2025-05-17</datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+    <artikle id_artikla="8">
+        <ime_artikla>Grogu z lebdilnim vozičkom</ime_artikla>
+        <stevilo_kock>1048</stevilo_kock>
+        <starost>10+</starost>
+        <cena>99,99 €</cena>
+        <datumZadnjeNabave></datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+    <artikle id_artikla="9">
+        <ime_artikla>Puščavski Skif in Sarlaccovo brezno</ime_artikla>
+        <stevilo_kock>558</stevilo_kock>
+        <starost>9+</starost>
+        <cena>79,99 €</cena>
+        <datumZadnjeNabave>2025-05-19</datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+    <artikle id_artikla="10">
+        <ime_artikla>Zvezdna ladja razreda Fire-spray Janga Fetta</ime_artikla>
+        <stevilo_kock>2970</stevilo_kock>
+        <starost>18+</starost>
+        <cena>299,99 €</cena>
+        <datumZadnjeNabave></datumZadnjeNabave>
+        <zaloga>10</zaloga>
+    </artikle>
+</artikli>

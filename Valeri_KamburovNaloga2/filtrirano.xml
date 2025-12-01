@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filtrirani_rezultati>
+  <rezultat>
+    <narocilo id_narocila="1" datum="2025-10-29">
+    </narocilo>
+    <artikel id_artikla="1">
+      <ime_artikla>Zvezda smrti</ime_artikla>
+      <stevilo_kock>9023</stevilo_kock>
+      <starost>18+</starost>
+      <cena>999,99 €</cena>
+      <zaloga>1</zaloga>
+    </artikel>
+    <dobavitelj id_dobavitelja="1">
+      <ime>A.M. RAMP and CO GMBH</ime>
+      <lokacija>Lorsbacher Strasse 28, 65817 - Germany</lokacija>
+      <razdalja>10</razdalja>
+    </dobavitelj>
+  </rezultat>
+  <rezultat>
+    <narocilo id_narocila="2" datum="2025-11-29">
+    </narocilo>
+    <artikel id_artikla="2">
+      <ime_artikla>Millenium Falcon</ime_artikla>
+      <stevilo_kock>7541</stevilo_kock>
+      <starost>16+</starost>
+      <cena>849,99 €</cena>
+      <zaloga>3</zaloga>
+    </artikel>
+    <dobavitelj id_dobavitelja="2">
+      <ime>AMB INUDSTRI AB</ime>
+      <lokacija>Kvarnvägen 26, SE-361 Broakulla - Sweden</lokacija>
+      <razdalja>100</razdalja>
+    </dobavitelj>
+  </rezultat>
+  <rezultat>
+    <narocilo id_narocila="3" datum="2025-12-29">
+    </narocilo>
+    <artikel id_artikla="3">
+      <ime_artikla>Imperialni zvezdni rušilec</ime_artikla>
+      <stevilo_kock>1555</stevilo_kock>
+      <starost>10+</starost>
+      <cena>169,99 €</cena>
+      <zaloga>4</zaloga>
+    </artikel>
+    <dobavitelj id_dobavitelja="3">
+      <ime>DS Smith</ime>
+      <lokacija>Husby Allé 8, DK-2630 Taastrup, Denmark</lokacija>
+      <razdalja>1000</razdalja>
+    </dobavitelj>
+  </rezultat>
+</filtrirani_rezultati>
