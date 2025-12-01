@@ -84,7 +84,7 @@ router.get("/hikes/:userId", (req, res) => {
   }
 });
 
-// Add completed hike
+// Add completed hike - 👇 POSODOBLJENA FUNKCIJA
 router.post("/hikes", async (req, res) => {
   const { userId, trailId, ...hikeData } = req.body;
 
@@ -94,13 +94,24 @@ router.post("/hikes", async (req, res) => {
 
   try {
     const hike = await authService.addCompletedHike(userId, trailId, hikeData);
-    res.status(201).json({ success: true, hike });
+
+    // 👇 AVTOMATSKO DODAJ V PRILJUBLJENE
+    const isFav = authService.isFavorite(userId, trailId);
+    if (!isFav) {
+      await authService.addFavoriteTrail(userId, trailId);
+    }
+
+    res.status(201).json({
+      success: true,
+      hike,
+      message: "Pohod dodan in označen kot priljubljen!",
+    });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 });
 
-// Delete completed hike
+// Delete completed hike - 👇 POSODOBLJENA FUNKCIJA
 router.delete("/hikes/:hikeId", async (req, res) => {
   const { userId } = req.body;
 
@@ -109,7 +120,30 @@ router.delete("/hikes/:hikeId", async (req, res) => {
   }
 
   try {
+    // 👇 PREVERI ČE JE BIL TO EDINI POHOD TE POTI
+    const hike = authService
+      .getCompletedHikes(userId)
+      .find((h) => h.id === req.params.hikeId);
+
+    if (!hike) {
+      return res.status(404).json({ error: "Hike not found" });
+    }
+
     await authService.deleteCompletedHike(req.params.hikeId, userId);
+
+    // 👇 ČE NI VEČ NOBENEGA POHODA TE POTI, ODSTRANI IZ PRILJUBLJENIH
+    const otherHikesOnSameTrail = authService
+      .getCompletedHikes(userId)
+      .filter((h) => h.trailId === hike.trailId);
+
+    if (otherHikesOnSameTrail.length === 0) {
+      try {
+        await authService.removeFavoriteTrail(userId, hike.trailId);
+      } catch (err) {
+        // Če ni v priljubljenih, ni problema
+      }
+    }
+
     res.json({ success: true, message: "Hike deleted" });
   } catch (error) {
     res.status(400).json({ error: error.message });
@@ -136,7 +170,7 @@ router.get("/favorites/:userId", (req, res) => {
   }
 });
 
-// Add favorite trail
+// Add favorite trail - 👇 KEEP THIS FOR MANUAL ADDING (optional)
 router.post("/favorites", async (req, res) => {
   const { userId, trailId } = req.body;
 
@@ -152,7 +186,7 @@ router.post("/favorites", async (req, res) => {
   }
 });
 
-// Remove favorite trail
+// Remove favorite trail - 👇 KEEP THIS FOR MANUAL REMOVING (optional)
 router.delete("/favorites", async (req, res) => {
   const { userId, trailId } = req.body;
 

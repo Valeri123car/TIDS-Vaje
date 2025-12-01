@@ -1,5 +1,45 @@
 {
-  "users": [],
-  "completedHikes": [],
-  "favoriteTrails": []
+  "users": [
+    {
+      "id": "user1",
+      "email": "test@peak.si",
+      "password": "test123",
+      "name": "Test Uporabnik",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "completedHikes": [
+    {
+      "id": "hike1",
+      "userId": "user1",
+      "trailId": 31900,
+      "date": "2024-11-15",
+      "duration": 280,
+      "notes": "Lep dan za pohod!",
+      "rating": 5
+    },
+    {
+      "id": "hike2",
+      "userId": "user1",
+      "trailId": 31905,
+      "date": "2024-11-20",
+      "duration": 180,
+      "notes": "Kratek izlet",
+      "rating": 4
+    }
+  ],
+  "favoriteTrails": [
+    {
+      "userId": "user1",
+      "trailId": 31900
+    },
+    {
+      "userId": "user1",
+      "trailId": 31905
+    },
+    {
+      "userId": "user1",
+      "trailId": 31910
+    }
+  ]
 }
