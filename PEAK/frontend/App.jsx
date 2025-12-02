@@ -6,6 +6,7 @@ import Home from '../frontend/src/pages/home/Home';
 import '../frontend/src/app.css';
 import Map from '../frontend/src/pages/map/Map';
 import Profile from './src/pages/profile/profile';
+import Tourism from '../frontend/src/pages/tourism/Tourism';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/map" element={<Map />} /> 
+              <Route path="/map" element={<Map />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/tourism" element={<Tourism />} />  
             </Routes>
           </main>
         </div>

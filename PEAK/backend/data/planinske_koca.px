@@ -1,0 +1,118 @@
+CHARSET="ANSI";
+AXIS-VERSION="2010";
+CODEPAGE="utf-8";
+LANGUAGE="sl";
+CREATION-DATE="20241202 12:00";
+DECIMALS=0;
+SHOWDECIMALS=0;
+MATRIX="PLANINSKE_KOCA";
+SUBJECT-CODE="TURIZEM";
+SUBJECT-AREA="Planinski turizem";
+CONFIDENTIAL=0;
+COPYRIGHT=YES;
+DESCRIPTION="Podatki o planinskih kočah in prenočitvah v Sloveniji - PZS";
+TITLE="Planinske koče in prenočitve po regijah";
+CONTENTS="Prenočitve v planinskih kočah";
+STUB="Planinska regija","Planinska koča";
+HEADING="Leto","Vrsta podatka";
+VALUES("Planinska regija")="Julijske Alpe","Kamniško-Savinjske Alpe","Notranjska","Primorska","Zasavje in Posavje","Koroška","Posočje","Ljubljana","Savinjska zahod","Podravje";
+VALUES("Planinska koča")="Triglavski dom na Kredarici","Zasavska koča na Prehodavcih","Dom Planika pod Triglavom","Koča na Doliču","Mihov dom na Vršiču","Planinski dom Tamar","Koča na Loki pod Raduho","Koča Draga Karolina na Velikem Snežniku","Tumova koča na Slavniku","Planinski dom na Sviščakih","Dom na Kredarici","Triglavska koča","Poštarska koča","Vodnikov dom","Planinsko zavetišče","Koča pri Triglavskih jezerih","Dom v Tamarju","Rifugio Zacchi","Koča na Planini","Planinski dom";
+VALUES("Leto")="2021","2022","2023","2024";
+VALUES("Vrsta podatka")="Število prenočitev","Število obiskovalcev";
+TIMEVAL("Leto")=TLIST(A1),"2021","2022","2023","2024";
+CODES("Planinska regija")="JA","KSA","NOT","PRI","ZAP","KOR","POS","LJU","SAV","POD";
+CODES("Planinska koča")="TDK","ZKP","DPT","KD","MDV","PDT","KLR","KDKS","TKS","PDS","DK","TK","PK","VD","PZ","KTJ","DT","RZ","KP","PD";
+CODES("Leto")="2021","2022","2023","2024";
+CODES("Vrsta podatka")="PREN","OBIS";
+PRECISION("Planinska regija","Število prenočitev")=0;
+PRECISION("Planinska regija","Število obiskovalcev")=0;
+LAST-UPDATED="20241202 12:00";
+UNITS="število";
+CONTACT="PZS - Planinska zveza Slovenije";
+SOURCE="Planinska zveza Slovenije, mapzs.pzs.si";
+NOTE="Podatki zbrani iz PZS baze planinskih poti in koč";
+REFPERIOD="2021-2024";
+BASEPERIOD="2023";
+DATABASE="PZS_PLANINSKE_POTI";
+DATA=
+8500 12000
+8200 11500
+8800 12800
+9100 13200
+7200 10500
+7000 10200
+7500 11000
+7800 11400
+6800 9800
+6600 9500
+7000 10200
+7200 10500
+5400 8200
+5200 7900
+5600 8600
+5800 8900
+4900 7500
+4800 7300
+5100 7800
+5300 8100
+4500 7000
+4400 6800
+4700 7300
+4900 7600
+3800 6200
+3700 6000
+4000 6500
+4200 6800
+3200 5500
+3100 5300
+3400 5800
+3600 6100
+2900 5000
+2800 4800
+3100 5300
+3300 5600
+2500 4500
+2400 4300
+2700 4800
+2900 5100
+2200 4000
+2100 3900
+2400 4300
+2600 4600
+1900 3600
+1800 3500
+2100 3900
+2300 4200
+1600 3200
+1550 3100
+1750 3500
+1900 3800
+1400 2900
+1350 2800
+1500 3100
+1650 3400
+1200 2600
+1150 2500
+1300 2800
+1450 3100
+1000 2300
+950 2200
+1100 2500
+1200 2700
+850 2000
+800 1900
+950 2200
+1050 2500
+700 1700
+650 1600
+800 1900
+900 2100
+600 1500
+550 1400
+700 1700
+800 1900
+500 1300
+450 1200
+600 1500
+700 1700
+;

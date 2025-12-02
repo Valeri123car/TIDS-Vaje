@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mountain, Menu, X, User, LogOut } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
-import Login from '../login/Login';
+import Login from '../Login/Login';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -42,6 +42,11 @@ const Navbar = () => {
               <li>
                 <Link to="/map" onClick={() => setIsOpen(false)}>
                   Zemljevid
+                </Link>
+              </li>
+              <li>
+                <Link to="/tourism" onClick={() => setIsOpen(false)}>
+                  Turizem
                 </Link>
               </li>
               

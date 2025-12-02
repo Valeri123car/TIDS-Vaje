@@ -15,8 +15,6 @@ export const trailsAPI = {
   getById: (id) => api.get(`/trails/${id}`),
   filter: (filters) => api.post("/trails/filter", filters),
   getStats: () => api.get("/trails/stats/all"),
-  getRegions: () => api.get("/trails/meta/regions"),
-  getDifficulties: () => api.get("/trails/meta/difficulties"),
 };
 
 // Weather API
@@ -30,16 +28,16 @@ export const authAPI = {
   login: (email, password) => api.post("/auth/login", { email, password }),
   register: (name, email, password) =>
     api.post("/auth/register", { name, email, password }),
-  getProfile: (userId) => api.get(`/auth/me/${userId}`),
-  updateProfile: (userId, updates) =>
-    api.put(`/auth/profile/${userId}`, updates),
+  getUser: (userId) => api.get(`/auth/me/${userId}`),
+  updateProfile: (userId, data) => api.put(`/auth/profile/${userId}`, data),
 
   // Hikes
   getHikes: (userId) => api.get(`/auth/hikes/${userId}`),
-  addHike: (userId, trailId, hikeData) =>
-    api.post("/auth/hikes", { userId, trailId, ...hikeData }),
+  addHike: (hikeData) => api.post("/auth/hikes", hikeData),
   deleteHike: (hikeId, userId) =>
     api.delete(`/auth/hikes/${hikeId}`, { data: { userId } }),
+
+  // Stats
   getStats: (userId) => api.get(`/auth/stats/${userId}`),
 
   // Favorites
@@ -52,9 +50,9 @@ export const authAPI = {
     api.get(`/auth/favorites/${userId}/${trailId}`),
 };
 
-// SURS API
 export const sursAPI = {
   getTourism: () => api.get("/surs/tourism"),
+  getStats: () => api.get("/surs/stats"),
 };
 
 export default api;
