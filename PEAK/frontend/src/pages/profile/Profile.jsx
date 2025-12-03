@@ -130,7 +130,6 @@ const Profile = () => {
       description: 'Opravil si zelo zahtevno pot!'
     });
 
-    // Badge za skupni čas
     const totalMinutes = hikes.reduce((sum, h) => sum + (h.duration || 0), 0);
     const totalHours = Math.floor(totalMinutes / 60);
 
@@ -177,20 +176,24 @@ const Profile = () => {
   };
 
   const handleAddHike = async (hikeData) => {
-    try {
-      await authAPI.addHike(user.id, hikeData.trailId, {
-        date: hikeData.date,
-        duration: hikeData.duration,
-        notes: hikeData.notes,
-        rating: hikeData.rating
-      });
-      setShowAddModal(false);
-      loadProfileData();
-    } catch (error) {
-      console.error('Failed to add hike:', error);
-      alert('Napaka pri dodajanju pohoda');
-    }
-  };
+  try {
+    await authAPI.addHike({
+      userId: user.id,
+      trailId: hikeData.trailId,
+      date: hikeData.date,
+      duration: hikeData.duration,
+      notes: hikeData.notes,
+      rating: hikeData.rating
+    });
+    
+    setShowAddModal(false);
+    loadProfileData();
+    alert('Pohod uspešno dodan!');
+  } catch (error) {
+    console.error('Failed to add hike:', error);
+    alert('Napaka pri dodajanju pohoda: ' + (error.response?.data?.error || error.message));
+  }
+};
 
   const getTrailInfo = (trailId) => {
     return trails.find(t => t.id === trailId);

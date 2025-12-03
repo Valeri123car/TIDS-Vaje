@@ -26,6 +26,16 @@
       "duration": 180,
       "notes": "Kratek izlet",
       "rating": 4
+    },
+    {
+      "id": "hike1764765056606",
+      "userId": "user1",
+      "trailId": 31902,
+      "date": "2025-12-03",
+      "duration": 674,
+      "notes": "neki",
+      "rating": 5,
+      "createdAt": "2025-12-03T12:30:56.606Z"
     }
   ],
   "favoriteTrails": [
@@ -40,6 +50,10 @@
     {
       "userId": "user1",
       "trailId": 31910
+    },
+    {
+      "userId": "user1",
+      "trailId": 31902
     }
   ]
 }

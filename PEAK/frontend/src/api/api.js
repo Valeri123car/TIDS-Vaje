@@ -31,16 +31,14 @@ export const authAPI = {
   getUser: (userId) => api.get(`/auth/me/${userId}`),
   updateProfile: (userId, data) => api.put(`/auth/profile/${userId}`, data),
 
-  // Hikes
   getHikes: (userId) => api.get(`/auth/hikes/${userId}`),
   addHike: (hikeData) => api.post("/auth/hikes", hikeData),
+
   deleteHike: (hikeId, userId) =>
     api.delete(`/auth/hikes/${hikeId}`, { data: { userId } }),
 
-  // Stats
   getStats: (userId) => api.get(`/auth/stats/${userId}`),
 
-  // Favorites
   getFavorites: (userId) => api.get(`/auth/favorites/${userId}`),
   addFavorite: (userId, trailId) =>
     api.post("/auth/favorites", { userId, trailId }),
